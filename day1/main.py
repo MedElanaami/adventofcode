@@ -1,6 +1,6 @@
 left_numbers=[]
 right_numbers=[]
-with open("input.txt") as file:
+with open("day1\input.txt") as file:
     for line in file:
          # Split the line into two numbers
         numbers = line.split()
@@ -11,7 +11,7 @@ with open("input.txt") as file:
 #sort the arrays
 left_numbers.sort()
 right_numbers.sort()
-
+print(left_numbers)
 # calculate the difference between the arrays in same index
 diff = [abs(left_numbers[i] - right_numbers[i]) for i in range(len(left_numbers))]
 
